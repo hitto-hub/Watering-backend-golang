@@ -1,3 +1,4 @@
+// Package config はアプリケーションの設定を読み込むためのパッケージです。
 package config
 
 import (

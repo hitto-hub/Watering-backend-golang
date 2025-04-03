@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/hitto-hub/PlantaTalk/internal/controllers"
+	"github.com/hitto-hub/PlantaTalk/controllers"
 )
 
 // SetupRoutes は全 HTTP ルートを設定してハンドラを返します

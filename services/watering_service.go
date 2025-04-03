@@ -3,7 +3,7 @@ package services
 import (
 	"time"
 
-	"github.com/hitto-hub/PlantaTalk/internal/models"
+	"github.com/hitto-hub/PlantaTalk/models"
 )
 
 // GetTimestamp は現在のタイムスタンプを "YYYY/MM/DD HH:MM:SS" 形式で返す

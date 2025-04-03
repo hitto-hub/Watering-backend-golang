@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/hitto-hub/PlantaTalk/internal/repository"
+	"github.com/hitto-hub/PlantaTalk/repository"
 )
 
 // GetAddressesHandler は全アドレス情報を取得するハンドラです

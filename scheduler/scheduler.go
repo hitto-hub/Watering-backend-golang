@@ -4,8 +4,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/hitto-hub/PlantaTalk/internal/database"
-	"github.com/hitto-hub/PlantaTalk/internal/services"
+	"github.com/hitto-hub/PlantaTalk/database"
+	"github.com/hitto-hub/PlantaTalk/services"
 )
 
 // StartScheduler は毎分実行されるスケジューラを起動

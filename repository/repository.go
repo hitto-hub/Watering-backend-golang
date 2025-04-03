@@ -3,8 +3,8 @@ package repository
 import (
 	"log"
 
-	"github.com/hitto-hub/PlantaTalk/internal/database"
-	"github.com/hitto-hub/PlantaTalk/internal/models"
+	"github.com/hitto-hub/PlantaTalk/database"
+	"github.com/hitto-hub/PlantaTalk/models"
 )
 
 // GetAllAddresses は DB から全てのアドレス情報を取得します
