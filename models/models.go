@@ -1,13 +1,13 @@
 // package models - アプリケーションのデータモデルを定義するパッケージです。
 package models
 
-// Address はアドレス情報を表す構造体
+// Address - アドレス情報を表す構造体
 type Address struct {
 	Address int    `json:"address"`
 	Name    string `json:"name"`
 }
 
-// WetnessValue は湿度値のレコードを表す
+// WetnessValue - 湿度値のレコードを表す
 type WetnessValue struct {
 	ID        int    `json:"id"`
 	Timestamp string `json:"timestamp"`
@@ -15,7 +15,7 @@ type WetnessValue struct {
 	Address   int    `json:"address"`
 }
 
-// TemperatureValue は温度値のレコードを表す
+// TemperatureValue - 温度値のレコードを表す
 type TemperatureValue struct {
 	ID        int    `json:"id"`
 	Timestamp string `json:"timestamp"`
@@ -23,7 +23,7 @@ type TemperatureValue struct {
 	Address   int    `json:"address"`
 }
 
-// HumidityValue は湿度のレコードを表す
+// HumidityValue - 湿度のレコードを表す
 type HumidityValue struct {
 	ID        int    `json:"id"`
 	Timestamp string `json:"timestamp"`
@@ -31,7 +31,7 @@ type HumidityValue struct {
 	Address   int    `json:"address"`
 }
 
-// WaterSupply は給水記録を表す
+// WaterSupply - 給水記録を表す
 type WaterSupply struct {
 	ID        int    `json:"id"`
 	Timestamp string `json:"timestamp"`
@@ -39,7 +39,7 @@ type WaterSupply struct {
 	Address   int    `json:"address"`
 }
 
-// WateringRegular は定期給水スケジュールを表す
+// WateringRegular - 定期給水スケジュールを表す
 type WateringRegular struct {
 	ID          int    `json:"id"`
 	Timestamp   string `json:"timestamp"`
@@ -49,7 +49,7 @@ type WateringRegular struct {
 	Address     int    `json:"address"`
 }
 
-// Instruction は水やり指示を表す構造体
+// Instruction - 水やり指示を表す構造体
 type Instruction struct {
 	ID          int    `json:"id"`
 	Timestamp   string `json:"timestamp"`

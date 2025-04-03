@@ -8,7 +8,7 @@ import (
 	"github.com/hitto-hub/PlantaTalk/controllers"
 )
 
-// SetupRoutes は全 HTTP ルートを設定してハンドラを返します
+// SetupRoutes - 全 HTTP ルートを設定してハンドラを返します
 func SetupRoutes() http.Handler {
 	router := mux.NewRouter()
 

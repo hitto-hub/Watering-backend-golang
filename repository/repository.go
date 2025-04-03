@@ -8,7 +8,7 @@ import (
 	"github.com/hitto-hub/PlantaTalk/models"
 )
 
-// GetAllAddresses は DB から全てのアドレス情報を取得します
+// GetAllAddresses - DB から全てのアドレス情報を取得します
 func GetAllAddresses() ([]models.Address, error) {
 	rows, err := database.DB.Query("SELECT address, name FROM addresses")
 	if err != nil {

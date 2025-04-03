@@ -8,7 +8,7 @@ import (
 	"strconv"
 )
 
-// SetWateringRegularHandler は定期水やりスケジュールを設定するハンドラ
+// SetWateringRegularHandler - 定期水やりスケジュールを設定するハンドラ
 // @Summary 定期水やりスケジュール設定
 // @Description 指定アドレスの定期水やりスケジュールを設定
 // @Param address query int true "Address"

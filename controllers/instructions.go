@@ -11,7 +11,7 @@ import (
 	"github.com/hitto-hub/PlantaTalk/services"
 )
 
-// SetInstructionHandler は水やり指示を作成するハンドラ
+// SetInstructionHandler - 水やり指示を作成するハンドラ
 // @Summary 水やり指示作成
 // @Description 指定アドレスに対して水やり指示を作成
 // @Param address query int true "Address"

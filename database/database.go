@@ -11,7 +11,7 @@ import (
 // グローバルなデータベース接続
 var DB *sql.DB
 
-// InitDB はデータベース接続を初期化
+// InitDB - データベース接続を初期化
 func InitDB() {
 	var err error
 	// SQLite の DB ファイルに接続

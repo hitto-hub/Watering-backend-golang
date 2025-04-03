@@ -9,7 +9,7 @@ import (
 	"github.com/hitto-hub/PlantaTalk/services"
 )
 
-// StartScheduler は毎分実行されるスケジューラを起動
+// StartScheduler - 毎分実行されるスケジューラを起動
 func StartScheduler() {
 	go func() {
 		ticker := time.NewTicker(1 * time.Minute)
@@ -20,7 +20,7 @@ func StartScheduler() {
 	}()
 }
 
-// executeWateringRegular は定期水やりスケジュールに基づく処理を実行
+// executeWateringRegular - 定期水やりスケジュールに基づく処理を実行
 func executeWateringRegular() {
 	// 実際には DB からスケジュール情報を取得し、条件に合う場合は水やり指示を発行する処理を実装
 	// ここでは例として固定のアドレスに対して処理を実行します

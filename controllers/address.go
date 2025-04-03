@@ -9,7 +9,7 @@ import (
 	"github.com/hitto-hub/PlantaTalk/repository"
 )
 
-// GetAddressesHandler は全アドレス情報を取得するハンドラです
+// GetAddressesHandler - 全アドレス情報を取得するハンドラです
 // @Summary 全アドレス取得
 // @Description DB から全アドレスを取得し JSON で返します
 // @Produce json
