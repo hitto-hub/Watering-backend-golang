@@ -50,7 +50,6 @@ type WateringRegular struct {
 }
 
 // Instruction は水やり指示を表す構造体
-// RedeployRequest - 再展開リクエストを表す構造体（例）
 type Instruction struct {
 	ID          int    `json:"id"`
 	Timestamp   string `json:"timestamp"`
