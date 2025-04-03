@@ -1,3 +1,5 @@
+// package controllers - アプリケーションのコントローラを定義するパッケージです。
+// ここでは、定期水やりスケジュールを設定するハンドラを定義しています。
 package controllers
 
 import (

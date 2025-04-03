@@ -1,3 +1,4 @@
+// package scheduler - アプリケーションのスケジューリング機能を管理するパッケージです。
 package scheduler
 
 import (

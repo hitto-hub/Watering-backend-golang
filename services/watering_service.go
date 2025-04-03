@@ -1,3 +1,4 @@
+// package services - アプリケーションのビジネスロジックを定義するパッケージです。
 package services
 
 import (

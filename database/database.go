@@ -1,3 +1,4 @@
+// package database - アプリケーションのデータベース接続を管理するパッケージです。
 package database
 
 import (

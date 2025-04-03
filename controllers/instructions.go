@@ -1,3 +1,5 @@
+// package controllers - アプリケーションのコントローラを定義するパッケージです。
+// ここでは、水やり指示を作成するハンドラを定義しています。
 package controllers
 
 import (

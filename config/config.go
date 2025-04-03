@@ -1,4 +1,4 @@
-// Package config はアプリケーションの設定を読み込むためのパッケージです。
+// Package config - アプリケーションの設定を読み込むためのパッケージです。
 package config
 
 import (
@@ -7,13 +7,13 @@ import (
 	"github.com/spf13/viper"
 )
 
-// Config は設定情報を表す
+// Config - 設定情報を表す
 type Config struct {
 	ServerPort string
 	// 他の設定項目
 }
 
-// LoadConfig は環境変数などから設定を読み込み Config を返す
+// LoadConfig - 環境変数などから設定を読み込み Config を返す
 func LoadConfig() *Config {
 	// env := os.Getenv("APP_ENV")
 	// viper.SetConfigName("config." + env) // config.production.yaml などを読み込む

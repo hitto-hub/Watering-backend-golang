@@ -1,3 +1,4 @@
+// package routes - アプリケーションのルーティングを管理するパッケージです。
 package routes
 
 import (

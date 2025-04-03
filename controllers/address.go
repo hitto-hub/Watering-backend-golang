@@ -1,3 +1,5 @@
+// Package controllers - アプリケーションのコントローラを定義するパッケージです。
+// ここでは、アドレス情報を取得するハンドラを定義しています。
 package controllers
 
 import (

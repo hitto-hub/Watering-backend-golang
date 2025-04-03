@@ -1,3 +1,4 @@
+// package repository - アプリケーションのデータベース操作を定義するパッケージです。
 package repository
 
 import (

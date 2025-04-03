@@ -1,3 +1,4 @@
+// package models - アプリケーションのデータモデルを定義するパッケージです。
 package models
 
 // Address はアドレス情報を表す構造体
