@@ -2,29 +2,19 @@
 package repository
 
 import (
-	"log"
-
 	"github.com/hitto-hub/PlantaTalk/database"
 	"github.com/hitto-hub/PlantaTalk/models"
 )
 
-// GetAllAddresses - DB から全てのアドレス情報を取得します
+// GetAllAddresses - GORMを使って全てのアドレス情報を取得します
 func GetAllAddresses() ([]models.Address, error) {
-	rows, err := database.DB.Query("SELECT address, name FROM addresses")
-	if err != nil {
+	var addresses []models.Address
+
+	// GORM の Find で全件取得
+	if err := database.DB.Find(&addresses).Error; err != nil {
 		return nil, err
 	}
-	defer rows.Close()
 
-	var addresses []models.Address
-	for rows.Next() {
-		var addr models.Address
-		if err := rows.Scan(&addr.Address, &addr.Name); err != nil {
-			log.Printf("Error scanning address: %v", err)
-			continue
-		}
-		addresses = append(addresses, addr)
-	}
 	return addresses, nil
 }
 

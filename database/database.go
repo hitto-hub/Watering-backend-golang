@@ -1,32 +1,43 @@
-// package database - アプリケーションのデータベース接続を管理するパッケージです。
+// package database - GORMを使ったデータベース接続・初期化を行うパッケージです。
 package database
 
 import (
-	"database/sql"
+	"fmt"
 	"log"
 
-	_ "github.com/mattn/go-sqlite3"
+	"gorm.io/driver/sqlite"
+	"gorm.io/gorm"
+
+	"github.com/hitto-hub/PlantaTalk/models"
 )
 
-// グローバルなデータベース接続
-var DB *sql.DB
+var DB *gorm.DB
 
-// InitDB - データベース接続を初期化
+// InitDB - GORMを使ってDB初期化
 func InitDB() {
 	var err error
-	// SQLite の DB ファイルに接続
-	DB, err = sql.Open("sqlite3", "./database.db")
+
+	// SQLiteに接続（なければファイルが作成される）
+	DB, err = gorm.Open(sqlite.Open("database.db"), &gorm.Config{})
 	if err != nil {
-		log.Fatalf("Failed to open database: %v", err)
+		log.Fatalf("DB接続に失敗しました: %v", err)
 	}
 
-	// 以下にテーブル作成処理を追加
-	// createTables()
-}
+	fmt.Println("GORM: SQLiteに接続成功")
 
-/*
-// createTables はテーブルを作成（省略可）
-func createTables() {
-	// SQL クエリを実行してテーブルを作成
+	// モデルに基づいてテーブルを自動作成（マイグレーション）
+	err = DB.AutoMigrate(
+		&models.Address{},
+		&models.WetnessValue{},
+		&models.TemperatureValue{},
+		&models.HumidityValue{},
+		&models.WaterSupply{},
+		&models.WateringRegular{},
+		&models.Instruction{},
+	)
+	if err != nil {
+		log.Fatalf("テーブル作成に失敗しました: %v", err)
+	}
+
+	fmt.Println("GORM: テーブル自動作成完了")
 }
-*/
