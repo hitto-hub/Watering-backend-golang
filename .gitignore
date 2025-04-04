@@ -104,3 +104,4 @@ languageserver.log
 .vscode
 config.yaml
 temp
+.db
