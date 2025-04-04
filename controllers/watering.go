@@ -20,7 +20,7 @@ import (
 // @Produce json
 // @Success 200 {object} map[string]interface{}
 // @Failure 400 {object} map[string]string
-// @Router /api/watering_regular [post]
+// @Router /api/v1/watering_regular [post]
 func SetWateringRegularHandler(w http.ResponseWriter, r *http.Request) {
 	addressStr := r.URL.Query().Get("address")
 	address, err := strconv.Atoi(addressStr)

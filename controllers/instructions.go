@@ -19,7 +19,7 @@ import (
 // @Produce json
 // @Success 200 {object} models.Instruction
 // @Failure 400 {object} map[string]string
-// @Router /api/instructions [post]
+// @Router /api/v1/instructions [post]
 func SetInstructionHandler(w http.ResponseWriter, r *http.Request) {
 	addressStr := r.URL.Query().Get("address")
 	address, err := strconv.Atoi(addressStr)

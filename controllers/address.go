@@ -15,7 +15,7 @@ import (
 // @Produce json
 // @Success 200 {object} []models.Address
 // @Failure 500 {object} map[string]string
-// @Router /api/addresses [get]
+// @Router /api/v1/addresses [get]
 func GetAddressesHandler(w http.ResponseWriter, r *http.Request) {
 	addresses, err := repository.GetAllAddresses()
 	if err != nil {
